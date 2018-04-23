@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Stifte_Test_table" max_length="40" name="x_58872_needit_stifte_test_table" type="collection">
+        <element label="Farbe" max_length="4000" name="farbe" type="string"/>
+        <element label="Stift_User" max_length="32" name="stift_user" reference="x_58872_needit_user_test_table" reference_qual="userSTARTSWITH^EQ" reference_qual_condition="userSTARTSWITH^EQ" type="reference"/>
+        <index name="index">
+            <element name="stift_user"/>
+        </index>
+    </element>
+</database>
